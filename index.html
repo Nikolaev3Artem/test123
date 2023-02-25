@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="inputs">
+            <div class="storage_input">
+                <label id="storage_label" for="#storage">Storage: 500GB</label>
+                <input type="range" min="0" max="1000" value="500" id="storage" onclick="getStorageValue(), backblaze(storage,transfer),bunny(storage,transfer),scaleway(storage,transfer),vultr(storage, transfer)">
+            </div>
+            <div class="transfer_input">
+                <label id="transfer_label"  for="#transfer">Transfer: 500GB</label>
+                <input type="range" min="0" max="1000" value="500" id="transfer" onclick="getTransferValue(), backblaze(storage,transfer),bunny(storage,transfer),scaleway(storage,transfer),vultr(storage, transfer)">
+            </div>
+        </div>
+        <div class="info">
+            <div>
+                <h3>backblaze</h3><h3 id="backblaze_output">0$</h3>
+            </div>
+            <div>
+                <div>
+                    <h3>bunny</h3><h3 id="bunny_output">0$</h3>
+                </div>
+                
+                <sub>
+                    <form>
+                        <label>
+                        <input type="radio" id="bunny_hdd" name="type" value="hdd">
+                        Hdd
+                        </label>
+                        <label>
+                        <input type="radio" id="bunny_ssd" name="type" value="ssd" checked>
+                        Ssd
+                        </label>
+                    </form>
+                </sub>
+            </div>
+            <div>
+                <div>
+                    <h3>scaleway</h3><h3 id="scaleway_output">0$</h3>
+                </div>
+                
+                <sub>
+                    <form>
+                        <label>
+                            <input type="radio" id="scaleway_multi" name="type" value="Multi" checked>
+                            Multi
+                        </label>
+                        <label>
+                            <input type="radio" id="scaleway_single" name="type" value="Single">
+                            Single
+                        </label>
+                    </form>
+                </sub>
+            </div>
+            <div>
+                <div>
+                    <h3>vultr</h3><h3 id="vultr_output">0$</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

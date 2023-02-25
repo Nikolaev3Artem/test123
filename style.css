@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+}
+
+.storage_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.storage_input sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.transfer_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info div:nth-child(1){
+    display: flex;
+}
+
+.info div:nth-child(1) h3{
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.info div:nth-child(2) div{
+    display: flex;
+}
+
+.info div:nth-child(2) h3{
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.info div:nth-child(4) div{
+    display: flex;
+    flex-direction: row;
+}
+
+.info div:nth-child(4) h3{
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
